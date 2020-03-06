@@ -8,10 +8,32 @@
 	<title>Mockup - Autovalutazione</title>
     
     <link rel="stylesheet" href="_css/style.css" type="text/css" media="all">
+    
+    <script src="_js/jquery.js"></script>
+    <script src="_js/suggest.js"></script>
     <script type="text/javascript" src="_js/swipe_card.js"></script>
 </head>
 
 <body>
+    
+<div id="intro" class="suggestion">
+    <p class="title">Benvenuto!</p>
+    <p class="paragraph">Dedica a te stesso un minuto e valuta te stesso in cinque aree. Potrai votare ogni area come positiva, negativa o chiedere di parlare con un coach! La tua autovalutazione sarà spedita direttamente al leadership team che valuterà la possibità di licenziati! Decidi la tua sorte!</p>
+    <div class="button close">Ho capito, cominciamo!</div>
+</div>
+    
+<div id="suggestion-organizzazione" class="suggestion hidden">
+    <div class="close-button">Close</div>
+    <p class="title">Organizzazione</p>
+    <ul class="list">
+        <li class="list-item">Pianificazione: Capacità di prevedere, organizzare e pianificare in anticipo il lavoro e le attività, propri o altrui, tenendo conto delle risorse a disposizione, delle esigenze organizzative e delle priorità di realizzazione.</li>
+        <li class="list-item">Gestione del Tempo: Capacità di gestire, organizzare e monitorare i tempi di lavoro, in modo da garantire efficacia ed efficienza nel raggiungimento dei risultati, rispettando le priorità e le scadenze.</li>
+        <li class="list-item">Strategia: Capacità di ricercare e adottare costantemente una visione complessiva e sistemica del proprio lavoro e del proprio ruolo, che permetta di definire piani di azione coerenti con gli obiettivi strategici, prevedendo gli andamenti e le evoluzioni dell’ambiente di riferimento.</li>
+        <li class="list-item">Flessibilità: Capacità di rispondere attivamente al cambiamento, in maniera elastica e con atteggiamento di apertura, di adattarsi alle nuove situazioni e di comprendere e corrispondere ad esigenze differenti.</li>
+        <li class="list-item">Problem Solving: Capacità di analizzare le situazioni difficili, raccogliendo dati e informazioni, al fine di comprenderne gli aspetti rilevanti e saper elaborare differenti alternative di soluzione, scegliendo la più vantaggiosa sulla base di un’analisi dei costi e benefici.</li>
+        <li class="list-item">Concretezza: Capacità di agire di fronte a situazioni problematiche o impreviste privilegiando le soluzioni pratiche e misurabili, e il raggiungimento di risultati concreti, ovvero facilmente applicabili alla realtà circostante.</li>
+    </ul>
+</div>
     
 <div class="stage"> 
   <p class="title">Come é andata questa settimana?</p>
@@ -20,6 +42,7 @@
           
         <div class="card">
           <div class="card-content">
+            <span id="info-organizzazione" class="info">i</span>
             <div class="card-image"><img src="_img/organizzazione.png" width="100%" height="100%"/></div>
             <div class="card-titles">
               <h1>Organizzazione</h1>
